@@ -1,9 +1,8 @@
 .navbar {
   display: flex;
   justify-content: center;
-  align-items: center;
   font-size: 1.2rem;
-  top: 400px;
+  top: s50px;
   z-index: 20;
   position: sticky;
 }
@@ -12,15 +11,117 @@
   display: flex;
   text-align: center;
   list-style: none;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.nav-links {
+  justify-content: space-between;
+  text-decoration: none;
+  padding: 25px;
+  background-image: linear-gradient(120deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
 .nav-item {
   justify-content: center;
-  margin-top: 400px;
+  margin-top: 600px;
   margin-right: 7rem;
 }
 
-.nav-links {
+.nav-item .active {
+  color: rgb(190, 27, 27);
+}
+
+.nav-icon {
   color: black;
-  text-decoration: none;
+  display: none;
+}
+
+.container-titulo {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 0px;
+  background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  font-size: 5rem;
+  padding: 20px 20px;
+  position: absolute;
+}
+
+.container-brand {
+  display: flex;
+  align-content: flex-start;
+  padding: 20px 70px 0px;
+  background-image: linear-gradient(120deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.medic {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 950px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: -120%;
+    opacity: 1;
+    transition: all 0.7s ease;
+    border-left: none;
+    margin-top: 0px;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  }
+
+  .nav-menu.active {
+    width: 70%;
+    left: 0px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .nav-item .active {
+    color: teal;
+    border: none;
+    margin-top: 15px;
+    line-height: 40px;
+    margin-right: 1rem;
+  }
+
+  .nav-item {
+    margin-top: 15px;
+    line-height: 40px;
+    margin-right: 1rem;
+  }
+
+  .nav-links {
+    padding: 0.8rem;
+    width: 100%;
+    display: table;
+    background-image: none;
+    color: black;
+    box-shadow: none;
+  }
+  .nav-icon {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    transform: translate(-100%, 20%);
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .container-titulo {
+    display: flex;
+    position: relative;
+    font-size: 3rem;
+    text-align: justify;
+  }
 }
