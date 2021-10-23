@@ -1,0 +1,49 @@
+.container-clinica {
+  display: flex;
+  margin-top: 0px;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  font-size: 5rem;
+  padding: 20px 20px;
+}
+
+.container-titulo1 {
+}
+
+.container-clientes {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.clientes {
+  background: #74ebd5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #acb6e5,
+    #74ebd5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #acb6e5,
+    #74ebd5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.agenda {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 950px) {
+  .container-titulo1 {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 40px;
+    flex-direction: column;
+    font-size: 2rem;
+  }
+}
