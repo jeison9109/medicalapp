@@ -3,6 +3,8 @@ import "../styles/consultorios.css";
 import { GiNurseFemale } from "react-icons/gi";
 import { MdOutlineSick, MdAddLocationAlt } from "react-icons/md";
 import { FaNotesMedical } from "react-icons/fa";
+import ilustracion from "../images/ilustracion.png";
+import { Footer } from "./Footer";
 
 import Carouseles from "./Carouseles";
 
@@ -102,7 +104,18 @@ export const Consultorios = () => {
           </div>
         </div>
       </div>
-      <Carouseles />
+      <div className="container-carousel">
+        <Carouseles />
+      </div>
+
+      <div className="container-ilustracion">
+        <img
+          className="container-ilustracion"
+          src={ilustracion}
+          alt={ilustracion}
+        />
+      </div>
+      <Footer />
     </>
   );
 };

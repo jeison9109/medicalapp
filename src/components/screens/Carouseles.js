@@ -8,63 +8,64 @@ export default function Carouseles() {
   const data = [
     {
       image: medicamentos,
-      caption: `<div>
+      /*caption: `<div>
                     
-                      Entrega de medicamentos
-                      <br/>
+                     <h1> Entrega de medicamentos</h1>
+                      
                       <ul>
                       <li>
-                      <p>Envio a Nivel Nacional</p>
-                      <p>Entrega en menos de 2horas</p>
-                      <p>100% confidencial y seguro</p>
+                      <a>Envio a Nivel Nacional</a>
+                      <br/>
+                      <a>Entrega en menos de 2horas</a>
+                      <br/>
+                      <a>100% confidencial y seguro</a>
                       </li>
                       </ul>
-                    </div>`,
+                    </div>`,*/
     },
     {
       image: agenda,
-      caption: `<div>
+      /* caption: `<div>
       <h1>Agenda</h1>
       <br/>
       <ul>
       <li>
-      <p>Integracion automatica con Whatsapp y correo electronico para confirmaciones de citas</p>
+      <a>Integracion automatica con Whatsapp y correo electronico para confirmaciones de citas</a>
+      <br/>
+      <a>Pagos en linea (Solo Colombia)</a>
+      <br/>
+      <a>Call center</a>
       </li>
-      <li><p>Pagos en linea (Solo Colombia)</p></li>
-      <li><p>Call center</p></li>
+     
       </ul>
        </div>
-      `,
+      `,*/
     },
     {
       image: historiaclinica,
-      caption: `
-      <div className="container">
-      <h1 >Historia Clinica electrónica</h1>
+      /*   caption: `
+      <div>
+      <h1>Historia Clinica electrónica</h1>
       <ul>
-      <li><p>Formularios configurables para cada especialidad
-      </p></li>
+      <li>
+      <a>Formularios configurables para cada especialidad<a/>
+      <br/>
+      <a>Consentimientos informados presenciales y vituales</a>
+      <br/>
+      <a>Órdenes médicas y formulación</a>
+      <br/>
+      <a>Sistema de Dictado Médico</a>
+      </li>
       
-      <li><p>Consentimientos informados presenciales y vituales
-      </p></li>
-      
-      <li><p>Órdenes médicas y formulación
-      </p></li>
-      
-      <li><p>Sistema de Dictado Médico
-      </p></li>
-      
-      <li><p>Repositorio de archivos del paciente
-      </p></li>
       </ul>
       </div>
-      `,
+      `,*/
     },
   ];
 
   const captionStyle = {
     fontWeight: "bold",
-    color: "black",
+    color: "gray",
   };
   const slideNumberStyle = {
     fontSize: "20px",
