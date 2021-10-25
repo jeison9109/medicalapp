@@ -1,0 +1,38 @@
+.container-empresa {
+  display: flex;
+  margin-top: 0px;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  font-size: 3rem;
+  padding: 20px 20px;
+}
+
+.empresa {
+  width: 100%;
+  height: auto;
+}
+
+.rebaja {
+  width: 80%;
+  height: auto;
+}
+.alpina {
+  width: 50%;
+  height: auto;
+}
+
+.coaspharma {
+  width: 100%;
+  height: auto;
+}
+
+.abbot {
+  width: 30%;
+  height: auto;
+}
+@media screen and (max-width: 950px) {
+  .icon {
+    padding-bottom: 20px;
+  }
+}
